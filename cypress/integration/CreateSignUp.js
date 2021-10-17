@@ -36,8 +36,8 @@ class CreateSignUp {
 
     selectButtonSubmit(){
         return this.getButtonSubmit()
-        .click()
-        .type(`{enter}`)
+        .click({force: true})
+        .assert.isOk('cek', 'cek1')
     };
 
 }
